@@ -1,7 +1,7 @@
 # 📈 프로젝트 개요
 
 - 기존 모놀리스(Springboot-JPA-Blog) 구조를 MSA 아키텍쳐로 전환하여, 서비스별 독립 개발 및 배포 가능하도록 구성
-- **React (Frontend)**, **Spring Boot (Backend)**, **MySQL (DB)**로 서비스 분리
+- **React (Frontend)**, **Spring Boot (Backend)**, MySQL (DB)로 서비스 분리
 - 개발 및 테스트 환경에서는 **Docker Compose**로 로컬 통합 시톱
 - 실제 배포 환경에서는 **AWS ECS + ECR** 기반으로 운영 가능하도록 구조 개정
 - nginx 프로시 설정을 환경변수 기반으로 템플릿화하여, 다양한 배포 환경(ECS, EC2 등)에서도 재사용 가능
