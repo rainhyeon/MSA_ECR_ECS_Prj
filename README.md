@@ -46,21 +46,6 @@ React에서 API 요청은 `/api/users/*`, `/api/board/*` 경로로 보내며, ng
 그리고 프로시 주소는 환경변수 기반으로 설정되어, Docker 환경 및 ECS 배포에서도 재사용 가능해지는 구조로 개정되었음.
 
 > `nginx.conf`는 `/frontend/nginx.conf.template`에서 환경값 `${USER_API_HOST}`, `${BOARD_API_HOST}`를 템플릿 컨퍼에스트로 변경 적용해 생성됩니다.
-
----
-
----
-## nginx 프로시 구성 (frontend)
-
-React에서 가지고 있는 API 요청은:
-
-```
-/api/users/*  →  user-service
-/api/board/*  →  board-service
-```
-
-nginx에서 ${USER_API_HOST}, ${BOARD_API_HOST} 환경값을 채용해 nginx.conf.template에서 발생시간 바꾸기
-
 > Docker 또는 ECS 같은 건설 환경에서 동일하게 nginx 구성해줍니다.
 
 ---
